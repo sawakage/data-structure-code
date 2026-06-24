@@ -1,8 +1,8 @@
 /*
  * @Author: 08250117_Sawakage 
  * @Date: 2026-05-30 10:35:30 
- * @Last Modified by:   08250117_Sawakage 
- * @Last Modified time: 2026-05-30 10:35:30 
+ * @Last Modified by: 08250117_Sawakage
+ * @Last Modified time: 2026-06-24 22:01:41
  */
 #include <cstdio>
 using namespace std;
@@ -31,8 +31,8 @@ void solve(int pl, int pr, int ql, int qr){
 
     if(ls == totalsize - 1){
         flag = false;
-        solve(pl + 1, pr, ql, qr - 1);
         mid[cnt++] = root;
+        solve(pl + 1, pr, ql, qr - 1);
     }
     else{
         solve(pl + 1, pl + ls, ql, k);
